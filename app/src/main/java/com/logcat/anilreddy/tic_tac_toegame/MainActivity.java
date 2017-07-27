@@ -2,6 +2,7 @@ package com.logcat.anilreddy.tic_tac_toegame;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageView;
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
                 counter.setImageResource(R.drawable.circle);
 
+                Log.i("Circle in it","Working ");
+
                 activePlayer = 0;
             }
 
@@ -72,9 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
                     winnerMessage.setText(winner + " Player is the winner");
 
-                    LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
+//                    LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
+//
+//                    layout.setVisibility(View.VISIBLE);
 
-                    layout.setVisibility(View.VISIBLE);
                 } else  {
 
                     boolean gameIsOver = true;
